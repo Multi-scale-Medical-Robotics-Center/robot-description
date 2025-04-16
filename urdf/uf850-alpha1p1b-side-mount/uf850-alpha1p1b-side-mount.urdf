@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="uf850_raad_alpha1p1b">
+  <link name="world"></link>
+  <joint name="base_mount_fixed_joint" type="fixed">
+    <origin xyz="0 0 0.0" rpy="0 1.5708 0" />
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00052938 9.0739E-05 0.085358" rpy="0 0 0" />
+      <mass value="2.2693" />
+      <inertia ixx="0.0063732" ixy="1.2518E-05" ixz="-4.542E-05" iyy="0.0064351" iyz="7.4091E-06"
+        izz="0.0048914" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link1">
+    <inertial>
+      <origin xyz="4.7266E-07 0.034156 0.12262" rpy="0 0 0" />
+      <mass value="2.5825" />
+      <inertia ixx="0.014201" ixy="-6.717E-08" ixz="6.8507E-07" iyy="0.013014" iyz="-0.0040524"
+        izz="0.0058094" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link1.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint1" type="revolute">
+    <origin xyz="0 0 0.185" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-6.2657" upper="6.2657" effort="0" velocity="0" />
+  </joint>
+  <link name="link2">
+    <inertial>
+      <origin xyz="0.20307 -6.059E-05 0.016981" rpy="0 0 0" />
+      <mass value="3.9263" />
+      <inertia ixx="0.0069392" ixy="-2.2413E-05" ixz="0.0017331" iyy="0.081059" iyz="2.9717E-06"
+        izz="0.079552" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link2.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint2" type="revolute">
+    <origin xyz="0 -0.015 0.1785" rpy="1.5708 -1.5708 0" />
+    <parent link="link1" />
+    <child link="link2" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.2689" upper="2.2689" effort="0" velocity="0" />
+  </joint>
+  <link name="link3">
+    <inertial>
+      <origin xyz="0.0863494948425114 0.0483182570219465 -0.000543086768490797" rpy="0 0 0" />
+      <mass value="1.93939268353005" />
+      <inertia ixx="0.00561052110803925" ixy="-0.00336823252984434" ixz="0.00333457634884906"
+        iyy="0.0103133445549512" iyz="0.00164940520878415" izz="0.01071387280808" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link3.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint3" type="revolute">
+    <origin xyz="0.39 0 -0.045" rpy="3.1416 0 -1.5708" />
+    <parent link="link2" />
+    <child link="link3" />
+    <axis xyz="0 0 1" />
+    <limit lower="-4.1888" upper="0.0349" effort="0" velocity="0" />
+  </joint>
+  <link name="link4">
+    <inertial>
+      <origin xyz="-1.7502E-05 -0.031962 0.12983" rpy="0 0 0" />
+      <mass value="1.4855" />
+      <inertia ixx="0.012521" ixy="-1.2331E-07" ixz="3.9881E-07" iyy="0.010509" iyz="0.0041027"
+        izz="0.0033564" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link4.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint4" type="revolute">
+    <origin xyz="0.15 0.15973 -0.03" rpy="-1.5708 0 0" />
+    <parent link="link3" />
+    <child link="link4" />
+    <axis xyz="0 0 1" />
+    <limit lower="-6.2657" upper="6.2657" effort="0" velocity="0" />
+  </joint>
+  <link name="link5">
+    <inertial>
+      <origin xyz="-0.00505548570000536 -1.2161662732435E-08 0.0468416823930789" rpy="0 0 0" />
+      <mass value="0.78944978594375" />
+      <inertia ixx="0.000780755039152321" ixy="5.0099335354952E-09" ixz="1.46023134922528E-05"
+        iyy="0.00146715851200513" iyz="-1.30533246316669E-09" izz="0.00139383228282704" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link5.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint5" type="revolute">
+    <origin xyz="-2.0826E-05 -0.051 0.266" rpy="-1.5708 -1.5708 0" />
+    <parent link="link4" />
+    <child link="link5" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.0944" upper="2.0944" effort="0" velocity="0" />
+  </joint>
+  <link name="link6">
+    <inertial>
+      <origin xyz="-4.7204E-05 0.00063906 0.013226" rpy="0 0 0" />
+      <mass value="0.14189" />
+      <inertia ixx="6.7663E-05" ixy="-2.7766E-07" ixz="-8.3162E-09" iyy="7.0062E-05"
+        iyz="-2.9674E-08" izz="0.00012021" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link6.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint6" type="revolute">
+    <origin xyz="0.06 0 0.0505" rpy="1.5708 0 1.5708" />
+    <parent link="link5" />
+    <child link="link6" />
+    <axis xyz="0 0 1" />
+    <limit lower="-6.2657" upper="6.2657" effort="0" velocity="0" />
+  </joint>
+  <link name="ee_mnt_link">
+    <inertial>
+      <origin xyz="2.892E-05 0.07155 0.0085809" rpy="0 0 0" />
+      <mass value="0.15544" />
+      <inertia ixx="0.00028466" ixy="-8.8984E-08" ixz="-1.2599E-07" iyy="0.00010436"
+        iyz="-1.7621E-05" izz="0.00024221" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/ee_mnt_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/ee_mnt_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ee_mnt_fixed_joint" type="fixed">
+    <origin xyz="0 0 0.03" rpy="0 0 0" />
+    <parent link="link6" />
+    <child link="ee_mnt_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <link name="ft_sensor_link">
+    <inertial>
+      <origin xyz="0 0 2.77555756156289E-17" rpy="0 0 0" />
+      <mass value="0.0250988287832203" />
+      <inertia ixx="4.37949460885344E-06" ixy="9.64543688931354E-21" ixz="1.46138448716455E-21"
+        iyy="4.37949460885346E-06" iyz="2.4472267669352E-22" izz="7.28318704410399E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/ft_sensor_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/ft_sensor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ft_sensor_fixed_joint" type="fixed">
+    <origin xyz="0 0.0695 -0.025" rpy="-1.5708 -1.5708 0" />
+    <parent link="ee_mnt_link" />
+    <child link="ft_sensor_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <link name="tool_mnt_link">
+    <inertial>
+      <origin xyz="-0.00194216460710694 -2.7655906731372E-08 0.0421833729352894" rpy="0 0 0" />
+      <mass value="0.110626907130558" />
+      <inertia ixx="3.36078411228929E-05" ixy="-3.0935363163E-10" ixz="3.48055629011794E-07"
+        iyy="3.8107615873046E-05" iyz="6.39570510534078E-11" izz="5.33202268364943E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_mnt_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_mnt_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tool_mnt_fixed_joint" type="fixed">
+    <origin xyz="0 0 0.0095" rpy="0 0 0" />
+    <parent link="ft_sensor_link" />
+    <child link="tool_mnt_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <link name="tool_handle_link">
+    <inertial>
+      <origin xyz="1.7266E-05 0.00034279 0.020394" rpy="0 0 0" />
+      <mass value="0.059728" />
+      <inertia ixx="7.2764E-05" ixy="2.0154E-12" ixz="3.1877E-09" iyy="7.1572E-05" iyz="-2.0054E-07"
+        izz="1.5442E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_handle_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_handle_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tool_handle_fixed_joint" type="fixed">
+    <origin xyz="-0.0595 0 0.07975" rpy="-1.5708 0 1.5708" />
+    <parent link="tool_mnt_link" />
+    <child link="tool_handle_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <link name="tool_head_link">
+    <inertial>
+      <origin xyz="0.010735 0.002192 4.9195E-07" rpy="0 0 0" />
+      <mass value="0.00049397" />
+      <inertia ixx="7.715E-09" ixy="-1.2624E-09" ixz="-3.2307E-14" iyy="1.7425E-08" iyz="5.3555E-14"
+        izz="1.7014E-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_head_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_head_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tool_articulated_joint" type="revolute">
+    <origin xyz="0 -0.01075 -0.2305" rpy="0 1.5708 0" />
+    <parent link="tool_handle_link" />
+    <child link="tool_head_link" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="0.6981" effort="0" velocity="0" />
+  </joint>
+  <link name="tool_tip_link">
+    <inertial>
+      <origin xyz="-3.1642E-05 1.1102E-16 -0.0075969" rpy="0 0 0" />
+      <mass value="2.65E-05" />
+      <inertia ixx="5.748E-10" ixy="-6.0086E-27" ixz="-2.9788E-12" iyy="5.7436E-10" iyz="1.4482E-24"
+        izz="6.936E-12" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_tip_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../meshes/uf850-alpha1p1b-side-mount/tool_tip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="tip_link_fixed_joint" type="fixed">
+    <origin xyz="0.0174 0.014749 0" rpy="-1.5708 -1.5708 0" />
+    <parent link="tool_head_link" />
+    <child link="tool_tip_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+  <link name="screwdriver_tip_link"></link>
+  <joint name="screwdriver_tip_link_fixed_joint" type="fixed">
+    <origin xyz="0.0174 0.009249 0" rpy="-1.5708 -1.5708 0" />
+    <parent link="tool_head_link" />
+    <child link="screwdriver_tip_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+</robot>
