@@ -4,6 +4,9 @@
 # Example 1: ros2  launch launch/raad.py urdfFile:=urdf/ur5e/ur5e.urdf rviz2File:=config/ur5e/ur5e.rviz
 # Example 2: ros2  launch launch/raad.py urdfFile:=urdf/ur5e/ur5e.urdf rviz2File:=config/ur5e/ur5e.rviz jointUi:='True'
 
+# Example 3: ros2  launch launch/raad.py urdfFile:=urdf/uf850-alpha1p1b-side-mount/uf850-alpha1p1b-side-mount.urdf rviz2File:=config/uf850-alpha1p1b-side-mount/uf850-alpha1p1b-side-mount.rviz
+# Example 4: ros2  launch launch/raad.py urdfFile:=urdf/uf850-alpha1p1b-side-mount/uf850-alpha1p1b-side-mount.urdf rviz2File:=config/uf850-alpha1p1b-side-mount/uf850-alpha1p1b-side-mount.rviz  jointUi:='True'
+
 import os
 import sys
 import launch
@@ -24,7 +27,7 @@ def launch_setup(context, *args, **kwargs):
     with open(urdfFileName, 'r') as infp:
         robot_desc = infp.read()
 
-    robot_desc = robot_desc.replace("file://./", "file://" + os.getcwd() +"/")
+    robot_desc = robot_desc.replace("mesh filename=\"../../meshes/", "mesh filename=\"file://" + os.getcwd() +"/meshes/")
 
     # Parameter for robot description
     robot_state_publisher_node = Node(
