@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="uf850_raad_alpha1p1c">
+  name="uf850_raad_alpha1p1b">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.000529381193042411 9.07390948466091E-05 0.0858578923524693"
+        xyz="-0.00052938 9.0739E-05 0.085358"
         rpy="0 0 0" />
       <mass
-        value="2.26934676030042" />
+        value="2.2693" />
       <inertia
-        ixx="0.0063731561536393"
-        ixy="1.25183279700493E-05"
-        ixz="-4.54198903083044E-05"
-        iyy="0.00643506072418729"
-        iyz="7.40905904086517E-06"
-        izz="0.00489135791483369" />
+        ixx="0.0063732"
+        ixy="1.2518E-05"
+        ixz="-4.542E-05"
+        iyy="0.0064351"
+        iyz="7.4091E-06"
+        izz="0.0048914" />
     </inertial>
     <visual>
       <origin
@@ -26,12 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/base_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/base_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="link1">
     <inertial>
       <origin
-        xyz="4.72662420536452E-07 0.0341555675284109 0.122617792332256"
+        xyz="4.7266E-07 0.034156 0.12262"
         rpy="0 0 0" />
       <mass
-        value="2.58250832372613" />
+        value="2.5825" />
       <inertia
-        ixx="0.0142007445978911"
-        ixy="-6.71696222262772E-08"
-        ixz="6.85066052709814E-07"
-        iyy="0.0130139037479425"
-        iyz="-0.00405235293549152"
-        izz="0.00580935966400871" />
+        ixx="0.014201"
+        ixy="-6.717E-08"
+        ixz="6.8507E-07"
+        iyy="0.013014"
+        iyz="-0.0040524"
+        izz="0.0058094" />
     </inertial>
     <visual>
       <origin
@@ -66,12 +66,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link1.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link1.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link1.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -88,7 +88,7 @@
     name="joint1"
     type="revolute">
     <origin
-      xyz="0 0 0.1855"
+      xyz="0 0 0.185"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -106,17 +106,17 @@
     name="link2">
     <inertial>
       <origin
-        xyz="0.203065873539687 -6.05902168789307E-05 0.0169808927009458"
+        xyz="0.20307 -6.059E-05 0.016981"
         rpy="0 0 0" />
       <mass
-        value="3.92627963689085" />
+        value="3.9263" />
       <inertia
-        ixx="0.00693918567693138"
-        ixy="-2.24126247112041E-05"
-        ixz="0.00173313031385876"
-        iyy="0.0810588517362324"
-        iyz="2.97172821179683E-06"
-        izz="0.0795515504840066" />
+        ixx="0.0069392"
+        ixy="-2.2413E-05"
+        ixz="0.0017331"
+        iyy="0.081059"
+        iyz="2.9717E-06"
+        izz="0.079552" />
     </inertial>
     <visual>
       <origin
@@ -124,12 +124,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link2.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link2.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link2.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     type="revolute">
     <origin
       xyz="0 -0.015 0.1785"
-      rpy="0 -1.5708 1.5708" />
+      rpy="1.5708 -1.5708 0" />
     <parent
       link="link1" />
     <child
@@ -164,17 +164,17 @@
     name="link3">
     <inertial>
       <origin
-        xyz="0.0863494948425127 0.0483182570219474 -0.00054308676849199"
+        xyz="0.0863494948425114 0.0483182570219465 -0.000543086768490797"
         rpy="0 0 0" />
       <mass
-        value="1.93939268353003" />
+        value="1.93939268353005" />
       <inertia
-        ixx="0.00561052110803922"
-        ixy="-0.00336823252984425"
-        ixz="0.00333457634884899"
-        iyy="0.010313344554951"
-        iyz="0.00164940520878412"
-        izz="0.0107138728080798" />
+        ixx="0.00561052110803925"
+        ixy="-0.00336823252984434"
+        ixz="0.00333457634884906"
+        iyy="0.0103133445549512"
+        iyz="0.00164940520878415"
+        izz="0.01071387280808" />
     </inertial>
     <visual>
       <origin
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link3.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link3.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link3.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -205,7 +205,7 @@
     type="revolute">
     <origin
       xyz="0.39 0 -0.045"
-      rpy="-3.1416 0 -1.5708" />
+      rpy="3.1416 0 -1.5708" />
     <parent
       link="link2" />
     <child
@@ -222,17 +222,17 @@
     name="link4">
     <inertial>
       <origin
-        xyz="-1.75018343566702E-05 -0.0319624668987543 0.12982595001905"
+        xyz="-1.7502E-05 -0.031962 0.12983"
         rpy="0 0 0" />
       <mass
-        value="1.48547732134494" />
+        value="1.4855" />
       <inertia
-        ixx="0.0125205937887543"
-        ixy="-1.23307194842483E-07"
-        ixz="3.9880645204145E-07"
-        iyy="0.0105089337813533"
-        iyz="0.00410269445014382"
-        izz="0.00335637406116537" />
+        ixx="0.012521"
+        ixy="-1.2331E-07"
+        ixz="3.9881E-07"
+        iyy="0.010509"
+        iyz="0.0041027"
+        izz="0.0033564" />
     </inertial>
     <visual>
       <origin
@@ -240,12 +240,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link4.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link4.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link4.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -280,17 +280,17 @@
     name="link5">
     <inertial>
       <origin
-        xyz="-0.00505548570000536 -1.21616627879462E-08 0.0468416823930791"
+        xyz="-0.00505548570000536 -1.2161662732435E-08 0.0468416823930789"
         rpy="0 0 0" />
       <mass
-        value="0.789449785943745" />
+        value="0.78944978594375" />
       <inertia
-        ixx="0.000780755039152313"
-        ixy="5.00993353657239E-09"
-        ixz="1.46023134922534E-05"
-        iyy="0.00146715851200512"
-        iyz="-1.30533246349001E-09"
-        izz="0.00139383228282703" />
+        ixx="0.000780755039152321"
+        ixy="5.0099335354952E-09"
+        ixz="1.46023134922528E-05"
+        iyy="0.00146715851200513"
+        iyz="-1.30533246316669E-09"
+        izz="0.00139383228282704" />
     </inertial>
     <visual>
       <origin
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link5.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link5.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link5.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -321,7 +321,7 @@
     type="revolute">
     <origin
       xyz="-2.0826E-05 -0.051 0.266"
-      rpy="0 -1.5708 -1.5708" />
+      rpy="-1.5708 -1.5708 0" />
     <parent
       link="link4" />
     <child
@@ -338,17 +338,17 @@
     name="link6">
     <inertial>
       <origin
-        xyz="-4.72035930393355E-05 0.000639057257617759 0.0132264284318735"
+        xyz="-4.7204E-05 0.00063906 0.013226"
         rpy="0 0 0" />
       <mass
-        value="0.141894683215408" />
+        value="0.14189" />
       <inertia
-        ixx="6.76629464542077E-05"
-        ixy="-2.77663340910059E-07"
-        ixz="-8.31620297684434E-09"
-        iyy="7.00617203588722E-05"
-        iyz="-2.96740962380756E-08"
-        izz="0.000120209691065693" />
+        ixx="6.7663E-05"
+        ixy="-2.7766E-07"
+        ixz="-8.3162E-09"
+        iyy="7.0062E-05"
+        iyz="-2.9674E-08"
+        izz="0.00012021" />
     </inertial>
     <visual>
       <origin
@@ -356,12 +356,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link6.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link6.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -370,7 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/link6.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/link6.STL" />
       </geometry>
     </collision>
   </link>
@@ -396,17 +396,17 @@
     name="ee_mnt_link">
     <inertial>
       <origin
-        xyz="0.0719454231655011 -0.000103953340603258 0.0103852660762278"
+        xyz="2.892E-05 0.07155 0.0085809"
         rpy="0 0 0" />
       <mass
-        value="0.201702921570291" />
+        value="0.15544" />
       <inertia
-        ixx="0.000123848485495905"
-        ixy="-7.97077252618468E-11"
-        ixz="-2.60919036045685E-05"
-        iyy="0.000426384661795002"
-        iyz="-6.42875142427976E-08"
-        izz="0.000433647189572981" />
+        ixx="0.00028466"
+        ixy="-8.8984E-08"
+        ixz="-1.2599E-07"
+        iyy="0.00010436"
+        iyz="-1.7621E-05"
+        izz="0.00024221" />
     </inertial>
     <visual>
       <origin
@@ -414,12 +414,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/ee_mnt_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/ee_mnt_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -428,7 +428,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/ee_mnt_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/ee_mnt_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -436,7 +436,7 @@
     name="ee_mnt_fixed_joint"
     type="fixed">
     <origin
-      xyz="0 0 0.027"
+      xyz="0 0 0.03"
       rpy="0 0 0" />
     <parent
       link="link6" />
@@ -449,17 +449,17 @@
     name="ft_sensor_link">
     <inertial>
       <origin
-        xyz="0 2.77555756156289E-17 0"
+        xyz="0 0 2.77555756156289E-17"
         rpy="0 0 0" />
       <mass
-        value="0.0250988287832202" />
+        value="0.0250988287832203" />
       <inertia
-        ixx="4.3794946088534E-06"
-        ixy="9.41090738840317E-21"
-        ixz="-1.19007845526023E-21"
-        iyy="4.37949460885341E-06"
-        iyz="-2.79683982270957E-22"
-        izz="7.28318704410393E-06" />
+        ixx="4.37949460885344E-06"
+        ixy="9.64543688931354E-21"
+        ixz="1.46138448716455E-21"
+        iyy="4.37949460885346E-06"
+        iyz="2.4472267669352E-22"
+        izz="7.28318704410399E-06" />
     </inertial>
     <visual>
       <origin
@@ -467,7 +467,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/ft_sensor_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/ft_sensor_link.STL" />
       </geometry>
       <material
         name="">
@@ -481,7 +481,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/ft_sensor_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/ft_sensor_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -489,8 +489,8 @@
     name="ft_sensor_fixed_joint"
     type="fixed">
     <origin
-      xyz="0.0695 0 -0.025"
-      rpy="0 -1.5708 3.1416" />
+      xyz="0 0.0695 -0.025"
+      rpy="-1.5708 -1.5708 0" />
     <parent
       link="ee_mnt_link" />
     <child
@@ -502,17 +502,17 @@
     name="tool_mnt_link">
     <inertial>
       <origin
-        xyz="-0.0534414840729547 2.67086675601047E-06 -0.0381347686722255"
+        xyz="-0.00194216460710694 -2.7655906731372E-08 0.0421833729352894"
         rpy="0 0 0" />
       <mass
-        value="0.169976238671358" />
+        value="0.110626907130558" />
       <inertia
-        ixx="0.000130992037090606"
-        ixy="1.26497883646518E-09"
-        ixz="6.24299280033458E-06"
-        iyy="0.000104182679375258"
-        iyz="3.74315839503802E-09"
-        izz="9.2624547867622E-05" />
+        ixx="3.36078411228929E-05"
+        ixy="-3.0935363163E-10"
+        ixz="3.48055629011794E-07"
+        iyy="3.8107615873046E-05"
+        iyz="6.39570510534078E-11"
+        izz="5.33202268364943E-05" />
     </inertial>
     <visual>
       <origin
@@ -520,60 +520,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_mnt_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_mnt_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="tool_mnt_fixed_joint"
-    type="fixed">
-    <origin
-      xyz="0.0205 0 0.10725"
-      rpy="0 -1.5708 3.1416" />
-    <parent
-      link="ft_sensor_link" />
-    <child
-      link="tool_mnt_link" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="tool_handle">
-    <inertial>
-      <origin
-        xyz="-0.00122193551280292 -3.24759649985018E-05 0.000638750397150889"
-        rpy="0 0 0" />
-      <mass
-        value="0.114586034744144" />
-      <inertia
-        ixx="2.13162064981151E-05"
-        ixy="-2.00202650872907E-09"
-        ixz="2.35893278745021E-06"
-        iyy="6.55779221415034E-05"
-        iyz="-2.99204023849164E-09"
-        izz="5.78679216436995E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_handle.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_mnt_link.STL" />
       </geometry>
       <material
         name="">
@@ -587,38 +534,38 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_handle.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_mnt_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="tool_handle_joint"
+    name="tool_mnt_fixed_joint"
     type="fixed">
     <origin
-      xyz="-0.00875 0 -0.0901"
-      rpy="0 -1.5708 3.1416" />
+      xyz="0 0 0.0095"
+      rpy="0 0 0" />
     <parent
-      link="tool_mnt_link" />
+      link="ft_sensor_link" />
     <child
-      link="tool_handle" />
+      link="tool_mnt_link" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="tool_shaft_link">
+    name="tool_handle_link">
     <inertial>
       <origin
-        xyz="-2.17216283848742E-09 -5.03272925211906E-06 0.0934055928131479"
+        xyz="1.7266E-05 0.00034279 0.020394"
         rpy="0 0 0" />
       <mass
-        value="0.00519520993496849" />
+        value="0.059728" />
       <inertia
-        ixx="1.53195197984909E-05"
-        ixy="-1.01202432425701E-13"
-        ixz="8.81094222410114E-13"
-        iyy="1.53197791294463E-05"
-        iyz="2.43289691148285E-09"
-        izz="3.94207781576119E-08" />
+        ixx="7.2764E-05"
+        ixy="2.0154E-12"
+        ixz="3.1877E-09"
+        iyy="7.1572E-05"
+        iyz="-2.0054E-07"
+        izz="1.5442E-05" />
     </inertial>
     <visual>
       <origin
@@ -626,12 +573,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_shaft_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_handle_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.501960784313725 0.501960784313725 1 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -640,20 +587,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_shaft_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_handle_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="tool_shaft_fixed_joint"
+    name="tool_handle_fixed_joint"
     type="fixed">
     <origin
-      xyz="0.0741 0 0.00875"
-      rpy="-1.5708 0 -1.5708" />
+      xyz="-0.0595 0 0.07975"
+      rpy="-1.5708 0 1.5708" />
     <parent
-      link="tool_handle" />
+      link="tool_mnt_link" />
     <child
-      link="tool_shaft_link" />
+      link="tool_handle_link" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -661,17 +608,17 @@
     name="tool_head_link">
     <inertial>
       <origin
-        xyz="0.0165342596946343 0.000622533843971818 7.64730039570782E-08"
+        xyz="0.010735 0.002192 4.9195E-07"
         rpy="0 0 0" />
       <mass
-        value="0.000815640913959618" />
+        value="0.00049397" />
       <inertia
-        ixx="5.83063689906828E-09"
-        ixy="-5.67041785955176E-10"
-        ixz="-3.34024955473199E-14"
-        iyy="3.53123191588063E-08"
-        iyz="-8.36573206510759E-14"
-        izz="3.3885323350577E-08" />
+        ixx="7.715E-09"
+        ixy="-1.2624E-09"
+        ixz="-3.2307E-14"
+        iyy="1.7425E-08"
+        iyz="5.3555E-14"
+        izz="1.7014E-08" />
     </inertial>
     <visual>
       <origin
@@ -679,12 +626,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_head_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_head_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="1 0 0 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -693,18 +640,18 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_head_link.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_head_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="articulated_joint"
+    name="tool_articulated_joint"
     type="revolute">
     <origin
-      xyz="0 0 0.1912"
-      rpy="0 -1.5708 0" />
+      xyz="0 -0.01075 -0.2305"
+      rpy="0 1.5708 0" />
     <parent
-      link="tool_shaft_link" />
+      link="tool_handle_link" />
     <child
       link="tool_head_link" />
     <axis
@@ -716,20 +663,20 @@
       velocity="0" />
   </joint>
   <link
-    name="tool_tip">
+    name="tool_tip_link">
     <inertial>
       <origin
-        xyz="-1.79474088368714E-09 -7.78265007994605E-10 -0.00574074296655203"
+        xyz="-3.1642E-05 1.1102E-16 -0.0075969"
         rpy="0 0 0" />
       <mass
-        value="0.000290220217578366" />
+        value="2.65E-05" />
       <inertia
-        ixx="1.63043974377404E-09"
-        ixy="1.46096264257043E-12"
-        ixz="1.15526380475261E-15"
-        iyy="1.63924355584653E-09"
-        iyz="4.23464735334382E-16"
-        izz="2.59329714940174E-10" />
+        ixx="5.748E-10"
+        ixy="-6.0086E-27"
+        ixz="-2.9788E-12"
+        iyy="5.7436E-10"
+        iyz="1.4482E-24"
+        izz="6.936E-12" />
     </inertial>
     <visual>
       <origin
@@ -737,12 +684,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_tip.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_tip_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="1 1 0 1" />
+          rgba="0.25098 0.25098 0.25098 1" />
       </material>
     </visual>
     <collision>
@@ -751,73 +698,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/tool_tip.STL" />
+          filename="package://uf850_raad_alpha1p1b/meshes/tool_tip_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="tool_tip_fixed_joint"
+    name="tip_link_fixed_joint"
     type="fixed">
     <origin
-      xyz="0.0248 0.0137 0"
-      rpy="0 -1.5708 -1.5708" />
+      xyz="0.0174 0.014749 0"
+      rpy="-1.5708 -1.5708 0" />
     <parent
       link="tool_head_link" />
     <child
-      link="tool_tip" />
-    <axis
-      xyz="0 0 0" />
-  </joint>
-  <link
-    name="cnl_link">
-    <inertial>
-      <origin
-        xyz="-8.29372576172105E-09 -0.00837072119713045 0.00455844365498248"
-        rpy="0 0 0" />
-      <mass
-        value="0.027886237430013" />
-      <inertia
-        ixx="2.63757295130604E-05"
-        ixy="2.78788627586505E-13"
-        ixz="-1.09250448213575E-11"
-        iyy="8.75505313904458E-06"
-        iyz="5.30591464323229E-06"
-        izz="2.40454896438002E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/cnl_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="1 1 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/patrick/projects/mrc/drill/uf850_raad_alpha1p1c/meshes/cnl_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="cnl_fixed_joint"
-    type="fixed">
-    <origin
-      xyz="0.1519 0 0.017"
-      rpy="-1.5708 0 -1.5708" />
-    <parent
-      link="ee_mnt_link" />
-    <child
-      link="cnl_link" />
+      link="tool_tip_link" />
     <axis
       xyz="0 0 0" />
   </joint>
