@@ -1,8 +1,8 @@
 # ros2 launch your_package_name launch_file.py
 # ros2 launch launch/ros2.py urdfFile:=/PATH/TO/XXXX.urdf [jointUi:=['True'|'False']] rviz2File:=/PATH/TO/XXXX.rviz
 
-# Example 1: ros2  launch launch/raad.py urdfFile:=configs/urdf/ur5e.urdf rviz2File:=configs/rviz/ur5e.rviz
-# Example 2: ros2  launch launch/raad.py urdfFile:=configs/urdf/ur5e.urdf rviz2File:=configs/rviz/ur5e.rviz jointUi:='True'
+# Example 1: ros2  launch launch/raad.py urdfFile:=urdf/ur5e/ur5e.urdf rviz2File:=config/ur5e/ur5e.rviz
+# Example 2: ros2  launch launch/raad.py urdfFile:=urdf/ur5e/ur5e.urdf rviz2File:=config/ur5e/ur5e.rviz jointUi:='True'
 
 import os
 import sys
